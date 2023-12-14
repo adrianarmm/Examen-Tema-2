@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 
-
-template <typename T>
+template <typename A>
 struct Estudiante {
     std::string nombre;
-   T edad;
-    T promedio;
+    A edad;
+    A promedio;
     };
+
+template <typename A>
