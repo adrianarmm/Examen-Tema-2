@@ -14,3 +14,10 @@ struct Asistencia {
     std::string materia;
     EstadoAsistencia estado;
 };
+
+struct Estudiante {
+    std::string nombre;
+    int edad;
+    float promedio;
+    std::vector<Asistencia> registroAsistencia; // Registro de asistencia del estudiante
+};
