@@ -5,7 +5,7 @@
 struct Materia {
     std::string nombre;
     int codigo;
-    int creditos;
+
     };
 
 struct Estudiante {
@@ -13,3 +13,4 @@ struct Estudiante {
         int edad;
         float promedio;
         std::vector<Materia> materias;
+        };
