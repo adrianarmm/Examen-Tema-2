@@ -14,7 +14,15 @@
 #define MAX_MATERIAS 10
 
 struct Materia {
-    char nombre[50];
+    char nombre[10];
     int codigo;
 
+};
+
+struct Estudiante {
+    char nombre[10];
+    int edad;
+    float promedio;
+    struct Materia materias[MAX_MATERIAS];
+    int num_materias;
 };
