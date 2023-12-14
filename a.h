@@ -12,3 +12,9 @@
 #include <string.h>
 
 #define MAX_MATERIAS 10
+
+struct Materia {
+    char nombre[50];
+    int codigo;
+
+};
