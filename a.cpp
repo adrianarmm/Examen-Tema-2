@@ -5,3 +5,6 @@
 struct Materia {
     std::string nombre;
     int codigo;
+    int creditos;
+    };
+
