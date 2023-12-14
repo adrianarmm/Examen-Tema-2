@@ -16,7 +16,7 @@ void imprimir(Estudiante<A> estudiante) {
 }
 
 int main() {
-    Estudiante estudiante1 = {"Adriana ", 20, 85.5};
+    Estudiante<int> estudiante1 = {"Adriana ", 20, 85.5};
     mostrarEstudiante(estudiante1);
     return 0;
 }
