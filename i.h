@@ -56,6 +56,7 @@ void mostrarAsistencia(const Estudiante* estudiante) {
             estado = "Tardanza";
         }
         printf("Fecha: %s, Materia: %s, Estado: %s\n", estudiante->registroAsistencia[i].fecha, estudiante->registroAsistencia[i].materia, estado);
+
     }
 }
 
