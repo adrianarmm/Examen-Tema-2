@@ -18,6 +18,16 @@ void verificarFormatoFecha(const std::string& fecha) {
 
 int main() {
     try {
-        std::string fecha = "01/01/2024";
+        std::string fecha = "20/08/2005";
         verificarFormatoFecha(fecha);
         std::cout << "Fecha válida: " << fecha << std::endl;
+
+        fecha = "20082005"; // Formato inválido
+        verificarFormatoFecha(fecha);
+        std::cout << "Fecha válida: " << fecha << std::endl;
+    } catch (const FormatoFechaInvalido& e) {
+        std::cout << e.what() << std::endl;
+    } catch (const std::exception& e) {
+        std::cout << "Error inesperado: " << e.what() << std::endl;
+    }
+    return 0;
