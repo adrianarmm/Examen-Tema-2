@@ -47,3 +47,18 @@ void registrarAsistencia(Estudiante* estudiante, const char* fecha, const char* 
         printf("No se pueden agregar más asistencias.\n");
     }
 }
+
+void mostrarAsistencia(const Estudiante* estudiante) {
+    printf("Registro de asistencia para %s:\n", estudiante->nombre);
+    for (int i = 0; i < estudiante->num_asistencias; ++i) {
+        char* estado;
+        if (estudiante->registroAsistencia[i].estado == ASISTIO) {
+            estado = "Asistió";
+        } else if (estudiante->registroAsistencia[i].estado == FALTA) {
+            estado = "Falta";
+        } else {
+            estado = "Tardanza";
+        }
+        printf("Fecha: %s, Materia: %s, Estado: %s\n", estudiante->registroAsistencia[i].fecha, estudiante->registroAsistencia[i].materia, estado);
+    }
+}
