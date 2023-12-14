@@ -32,3 +32,4 @@ int main() {
     struct Estudiante estudiante1;
     strcpy(estudiante1.nombre, "Adriana");
     estudiante1.edad = 18;
+    estudiante1.promedio = 9.5;
