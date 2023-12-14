@@ -27,3 +27,10 @@ void eliminarMateria(Estudiante& estudiante, int codigoMateria) {
         }
     }
 }
+
+void mostrarMaterias(const Estudiante& estudiante) {
+    std::cout << "Materias de " << estudiante.nombre << ":\n";
+    for (const auto& materia : estudiante.materias) {
+        std::cout << "Nombre: " << materia.nombre << ", Código: " << materia.codigo << "\n";
+    }
+}
