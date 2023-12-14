@@ -8,3 +8,9 @@ enum EstadoAsistencia {
     FALTA,
     TARDANZA
 };
+
+struct Asistencia {
+    std::string fecha;
+    std::string materia;
+    EstadoAsistencia estado;
+};
