@@ -54,3 +54,9 @@ void mostrarMaterias(const struct Estudiante* estudiante) {
         printf("Nombre: %s, Código: %d\n", estudiante->materias[i].nombre, estudiante->materias[i].codigo);
     }
 }
+
+int main() {
+    struct Estudiante estudiante1 = {"Adriana", 20, 85.5, {}, 0};
+
+    struct Materia mat1 = {"Programacion", 101};
+    struct Materia mat2 = {"Informatica", 102};
