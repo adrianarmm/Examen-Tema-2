@@ -8,3 +8,8 @@
 
 
 #endif //EXAMEN_TEMA_2_I_H
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
