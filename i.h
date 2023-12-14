@@ -24,3 +24,7 @@ typedef enum {
     TARDANZA
 } EstadoAsistencia;
 
+typedef struct {
+    char fecha[MAX_FECHA];
+    EstadoAsistencia estado;
+} Asistencia;
