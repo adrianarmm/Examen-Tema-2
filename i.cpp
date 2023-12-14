@@ -42,3 +42,14 @@ void mostrarAsistencia(const Estudiante& estudiante) {
         std::cout << "Fecha: " << asistencia.fecha << ", Materia: " << asistencia.materia << ", Estado: " << estado << "\n";
     }
 }
+
+int main() {
+    Estudiante estudiante1 = {"Juan", 20, 85.5, {}};
+
+    registrarAsistencia(estudiante1, "01/01/2024", "Matemáticas", ASISTIO);
+    registrarAsistencia(estudiante1, "02/01/2024", "Historia", FALTA);
+
+    mostrarAsistencia(estudiante1);
+
+    return 0;
+}
