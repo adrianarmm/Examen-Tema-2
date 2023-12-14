@@ -14,3 +14,7 @@ struct Estudiante {
         float promedio;
         std::vector<Materia> materias;
         };
+
+void agregarMateria(Estudiante& estudiante, const Materia& nuevaMateria) {
+    estudiante.materias.push_back(nuevaMateria);
+}
