@@ -36,7 +36,7 @@ void mostrarMaterias(const Estudiante& estudiante) {
 }
 
 int main() {
-    Estudiante estudiante1 = {"Adriana", 20, 85.5, {}};
+    Estudiante estudiante1 = {"Adriana", 20, 85.5, };
 
     Materia mat1 = {"Programacion", 101};
     Materia mat2 = {"Informatica", 102};
