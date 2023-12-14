@@ -26,3 +26,12 @@ void registrarAsistencia(Estudiante& estudiante, const std::string& fecha, const
     Asistencia nuevaAsistencia = {fecha, materia, estado};
     estudiante.registroAsistencia.push_back(nuevaAsistencia);
 }
+
+
+void mostrarAsistencia(const Estudiante& estudiante) {
+    std::cout << "Registro de asistencia para " << estudiante.nombre << ":\n";
+    for (const auto& asistencia : estudiante.registroAsistencia) {
+        std::string estado;
+        if (asistencia.estado == ASISTIO) {
+            estado = "Asistió";
+        } else if (asistencia.estado == FALTA) {
