@@ -7,3 +7,6 @@
 
 
 #endif //EXAMEN_TEMA_2_A_H
+
+#include <stdio.h>
+#include <string.h>
