@@ -14,3 +14,8 @@ void imprimir(Estudiante<A> estudiante) {
     std::cout << "Edad: " << estudiante.edad << std::endl;
     std::cout << "Promedio: " << estudiante.promedio << std::endl;
 }
+
+int main() {
+    Estudiante estudiante1 = {"Juan", 20, 85.5};
+    mostrarEstudiante(estudiante1);
+}
