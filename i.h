@@ -62,3 +62,14 @@ void mostrarAsistencia(const Estudiante* estudiante) {
         printf("Fecha: %s, Materia: %s, Estado: %s\n", estudiante->registroAsistencia[i].fecha, estudiante->registroAsistencia[i].materia, estado);
     }
 }
+
+int main() {
+    Estudiante estudiante1 = {"Adriana", 20, 85.5, {}, 0};
+
+    registrarAsistencia(&estudiante1, "01/01/2024", "Programacion", ASISTIO);
+    registrarAsistencia(&estudiante1, "02/01/2024", "Informatica", FALTA);
+
+    mostrarAsistencia(&estudiante1);
+
+    return 0;
+}
