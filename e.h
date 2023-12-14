@@ -33,3 +33,7 @@ int main() {
     strcpy(estudiante1.nombre, "Adriana");
     estudiante1.edad = 18;
     estudiante1.promedio = 9.5;
+    mostrarEstudiante(estudiante1);
+
+    return 0;
+}
