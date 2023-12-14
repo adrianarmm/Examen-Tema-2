@@ -25,3 +25,5 @@ void eliminarMateria(Estudiante& estudiante, int codigoMateria) {
             estudiante.materias.erase(it);
             break;
         }
+    }
+}
