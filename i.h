@@ -30,8 +30,4 @@ typedef struct {
 } Asistencia;
 
 typedef struct {
-    char nombre[MAX_MATERIA];
-    int codigo;
-    Asistencia asistencias[MAX_ASISTENCIAS];
-    int num_asistencias;
-} Materia;
+    char nombre[50];
