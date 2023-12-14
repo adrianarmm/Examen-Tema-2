@@ -5,7 +5,6 @@
 struct Materia {
     std::string nombre;
     int codigo;
-
     };
 
 struct Estudiante {
