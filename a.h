@@ -6,9 +6,4 @@
 #define EXAMEN_TEMA_2_A_H
 
 
-class a{
-
-};
-
-
 #endif //EXAMEN_TEMA_2_A_H
