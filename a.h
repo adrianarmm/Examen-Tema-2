@@ -60,3 +60,15 @@ int main() {
 
     struct Materia mat1 = {"Programacion", 101};
     struct Materia mat2 = {"Informatica", 102};
+
+    agregarMateria(&estudiante1, &mat1);
+    agregarMateria(&estudiante1, &mat2);
+
+    mostrarMaterias(&estudiante1);
+
+    eliminarMateria(&estudiante1, 101);
+
+    mostrarMaterias(&estudiante1);
+
+    return 0;
+}
