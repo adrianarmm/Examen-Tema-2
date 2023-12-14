@@ -17,3 +17,10 @@
 #define MAX_ASISTENCIAS 50
 #define MAX_FECHA 20
 #define MAX_MATERIA 50
+
+typedef enum {
+    ASISTIO,
+    FALTA,
+    TARDANZA
+} EstadoAsistencia;
+
