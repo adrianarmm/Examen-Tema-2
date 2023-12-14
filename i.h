@@ -31,3 +31,8 @@ typedef struct {
 
 typedef struct {
     char nombre[50];
+    int edad;
+    float promedio;
+    Asistencia registroAsistencia[MAX_ASISTENCIAS];
+    int num_asistencias;
+} Estudiante;
