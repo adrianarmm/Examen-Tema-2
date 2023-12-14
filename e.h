@@ -27,3 +27,7 @@ void mostrarEstudiante(struct Estudiante estudiante) {
     printf("Promedio: %.2f\n", estudiante.promedio);
 }
 
+
+int main() {
+    struct Estudiante estudiante1;
+    strcpy(estudiante1.nombre, "Adriana");
