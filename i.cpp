@@ -35,3 +35,10 @@ void mostrarAsistencia(const Estudiante& estudiante) {
         if (asistencia.estado == ASISTIO) {
             estado = "Asistió";
         } else if (asistencia.estado == FALTA) {
+            estado = "Falta";
+        } else {
+            estado = "Tardanza";
+        }
+        std::cout << "Fecha: " << asistencia.fecha << ", Materia: " << asistencia.materia << ", Estado: " << estado << "\n";
+    }
+}
