@@ -18,3 +18,10 @@ struct Estudiante {
 void agregarMateria(Estudiante& estudiante, const Materia& nuevaMateria) {
     estudiante.materias.push_back(nuevaMateria);
 }
+
+void eliminarMateria(Estudiante& estudiante, int codigoMateria) {
+    for (auto it = estudiante.materias.begin(); it != estudiante.materias.end(); ++it) {
+        if (it->codigo == codigoMateria) {
+            estudiante.materias.erase(it);
+            break;
+        }
