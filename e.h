@@ -27,14 +27,6 @@ void mostrarEstudiante(Estudiante(GENERIC_TYPE) estudiante) {
     printf("Promedio: %.2f\n", estudiante.promedio);
     }
 
-int main() {
-    Estudiante(int) estudiante1;
-    strcpy(estudiante1.nombre, "Adriana Reyes");
-    estudiante1.edad = 18;
-    estudiante1.promedio = 9.5;
-
-    mostrarEstudiante(estudiante1);
-
-    return 0;
-}
-
+#undef GENERIC_TYPE
+#undef Estudiante
+#undef mostrarEstudiante
