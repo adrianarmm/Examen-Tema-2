@@ -13,7 +13,5 @@ void verificarFormatoFecha(const std::string& fecha) {
 
     if (fecha.size() != 10 || fecha[2] != '/' || fecha[5] != '/') {
         throw FormatoFechaInvalido();
-    }
-
-
 }
+    }
