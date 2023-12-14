@@ -15,3 +15,9 @@ void verificarFormatoFecha(const std::string& fecha) {
         throw FormatoFechaInvalido();
 }
     }
+
+int main() {
+    try {
+        std::string fecha = "01/01/2024";
+        verificarFormatoFecha(fecha);
+        std::cout << "Fecha válida: " << fecha << std::endl;
