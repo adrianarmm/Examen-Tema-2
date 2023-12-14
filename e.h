@@ -8,7 +8,7 @@
 
 
 #include <stdio.h>
-#include <string.h>
+
 
 #define GENERIC_TYPE int
 #define Estudiante(x) x ## _Estudiante
