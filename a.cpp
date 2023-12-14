@@ -8,3 +8,8 @@ struct Materia {
     int creditos;
     };
 
+struct Estudiante {
+        std::string nombre;
+        int edad;
+        float promedio;
+        std::vector<Materia> materias;
