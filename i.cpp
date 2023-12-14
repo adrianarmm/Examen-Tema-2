@@ -44,7 +44,7 @@ void mostrarAsistencia(const Estudiante& estudiante) {
 }
 
 int main() {
-    Estudiante estudiante1 = {"Juan", 20, 85.5, {}};
+    Estudiante estudiante1 = {"Juan", 20, 85.5, };
 
     registrarAsistencia(estudiante1, "01/01/2024", "Matemáticas", ASISTIO);
     registrarAsistencia(estudiante1, "02/01/2024", "Historia", FALTA);
