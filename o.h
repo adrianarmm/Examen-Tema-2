@@ -8,3 +8,8 @@
 
 
 #endif //EXAMEN_TEMA_2_O_H
+
+#include <stdio.h>
+#include <string.h>
+
+#define FORMATO_FECHA_INVALIDO 1
