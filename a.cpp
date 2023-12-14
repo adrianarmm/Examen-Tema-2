@@ -8,11 +8,11 @@ struct Materia {
     };
 
 struct Estudiante {
-        std::string nombre;
-        int edad;
-        float promedio;
-        std::vector<Materia> materias;
-        };
+    std::string nombre;
+    int edad;
+    float promedio;
+    std::vector<Materia> materias;
+};
 
 void agregarMateria(Estudiante& estudiante, const Materia& nuevaMateria) {
     estudiante.materias.push_back(nuevaMateria);
