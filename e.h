@@ -15,7 +15,7 @@
 #define mostrarEstudiante(x) x ## _mostrarEstudiante
 
 typedef struct Estudiante(GENERIC_TYPE) {
-  char nombre[100];
+  char nombre [100];
   GENERIC_TYPE edad;
   GENERIC_TYPE promedio;
 }
