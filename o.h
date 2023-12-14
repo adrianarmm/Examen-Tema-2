@@ -19,3 +19,5 @@ int verificarFormatoFecha(const char* fecha) {
     if (strlen(fecha) != 10 || fecha[2] != '/' || fecha[5] != '/') {
         return FORMATO_FECHA_INVALIDO;
     }
+    return 0;
+}
