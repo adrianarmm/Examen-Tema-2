@@ -36,3 +36,14 @@ void agregarMateria(struct Estudiante* estudiante, const struct Materia* nuevaMa
     }
 }
 
+void eliminarMateria(struct Estudiante* estudiante, int codigoMateria) {
+    for (int i = 0; i < estudiante->num_materias; ++i) {
+        if (estudiante->materias[i].codigo == codigoMateria) {
+            for (int j = i; j < estudiante->num_materias - 1; ++j) {
+                estudiante->materias[j] = estudiante->materias[j + 1];
+            }
+            estudiante->num_materias--;
+            break;
+        }
+    }
+}
