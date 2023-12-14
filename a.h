@@ -47,3 +47,10 @@ void eliminarMateria(struct Estudiante* estudiante, int codigoMateria) {
         }
     }
 }
+
+void mostrarMaterias(const struct Estudiante* estudiante) {
+    printf("Materias de %s:\n", estudiante->nombre);
+    for (int i = 0; i < estudiante->num_materias; ++i) {
+        printf("Nombre: %s, Código: %d\n", estudiante->materias[i].nombre, estudiante->materias[i].codigo);
+    }
+}
