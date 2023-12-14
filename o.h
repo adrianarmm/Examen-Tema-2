@@ -13,3 +13,9 @@
 #include <string.h>
 
 #define FORMATO_FECHA_INVALIDO 1
+
+int verificarFormatoFecha(const char* fecha) {
+
+    if (strlen(fecha) != 10 || fecha[2] != '/' || fecha[5] != '/') {
+        return FORMATO_FECHA_INVALIDO;
+    }
