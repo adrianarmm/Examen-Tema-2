@@ -21,3 +21,14 @@ int verificarFormatoFecha(const char* fecha) {
     }
     return 0;
 }
+
+int main() {
+    char fecha[] = "01/01/2024";
+    int resultado = verificarFormatoFecha(fecha);
+    if (resultado == 0) {
+        printf("Fecha válida: %s\n", fecha);
+    } else {
+        printf("Error: Formato de fecha inválido.\n");
+    }
+    return 0;
+}
