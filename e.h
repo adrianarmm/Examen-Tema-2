@@ -24,3 +24,5 @@ Estudiante(GENERIC_TYPE);
 void mostrarEstudiante(Estudiante(GENERIC_TYPE) estudiante) {
 char nombre[100];
   GENERIC_TYPE edad;
+GENERIC_TYPE promedio;
+} Estudiante(GENERIC_TYPE);
