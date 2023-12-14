@@ -36,3 +36,14 @@ typedef struct {
     Asistencia registroAsistencia[MAX_ASISTENCIAS];
     int num_asistencias;
 } Estudiante;
+
+void registrarAsistencia(Estudiante* estudiante, const char* fecha, const char* materia, EstadoAsistencia estado) {
+    if (estudiante->num_asistencias < MAX_ASISTENCIAS) {
+        strcpy(estudiante->registroAsistencia[estudiante->num_asistencias].fecha, fecha);
+        strcpy(estudiante->registroAsistencia[estudiante->num_asistencias].materia, materia);
+        estudiante->registroAsistencia[estudiante->num_asistencias].estado = estado;
+        estudiante->num_asistencias++;
+    } else {
+        printf("No se pueden agregar más asistencias.\n");
+    }
+}
