@@ -11,3 +11,5 @@
 #include <string.h>
 
 #define GENERIC_TYPE int
+#define Estudiante(x) x ## _Estudiante
+5#define mostrarEstudiante(x) x ## _mostrarEstudiante
