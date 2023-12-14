@@ -49,3 +49,6 @@ int main() {
     eliminarMateria(estudiante1, 101);
 
     mostrarMaterias(estudiante1);
+
+    return 0;
+}
