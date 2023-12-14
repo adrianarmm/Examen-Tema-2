@@ -21,3 +21,8 @@ struct Estudiante {
     float promedio;
     std::vector<Asistencia> registroAsistencia;
 };
+
+void registrarAsistencia(Estudiante& estudiante, const std::string& fecha, const std::string& materia, EstadoAsistencia estado) {
+    Asistencia nuevaAsistencia = {fecha, materia, estado};
+    estudiante.registroAsistencia.push_back(nuevaAsistencia);
+}
