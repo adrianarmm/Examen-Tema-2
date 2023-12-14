@@ -19,5 +19,5 @@ struct Estudiante {
     std::string nombre;
     int edad;
     float promedio;
-    std::vector<Asistencia> registroAsistencia; // Registro de asistencia del estudiante
+    std::vector<Asistencia> registroAsistencia;
 };
