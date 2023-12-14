@@ -31,3 +31,4 @@ void mostrarEstudiante(struct Estudiante estudiante) {
 int main() {
     struct Estudiante estudiante1;
     strcpy(estudiante1.nombre, "Adriana");
+    estudiante1.edad = 18;
