@@ -16,7 +16,12 @@ void imprimir(Estudiante<A> estudiante) {
 }
 
 int main() {
-    Estudiante<int> estudiante1 = {"Adriana ", 20, 85.5};
-    mostrarEstudiante(estudiante1);
+    Estudiante<int> estudiante1;
+    estudiante1.nombre = "Adriana Reyes";
+    estudiante1.edad = 18;
+    estudiante1.promedio = 9.5;
+
+    imprimir(estudiante1);
+
     return 0;
 }
