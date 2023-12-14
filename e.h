@@ -21,8 +21,8 @@ typedef struct Estudiante(GENERIC_TYPE) {
 }
 Estudiante(GENERIC_TYPE);
 
-void mostrarEstudiante((GENERIC_TYPE) (const Estudiante(GENERIC_TYPE) estudiante) {
-    printf("Nombre: %s\n", estudiante.nombre);
+void mostrarEstudiante((GENERIC_TYPE) (const Estudiante(GENERIC_TYPE)* estudiante) {
+    printf("Nombre: %s\n", estudiante->nombre);
     printf("Edad: %d\n", estudiante.edad);
     printf("Promedio: %.2f\n", estudiante.promedio);
     }
