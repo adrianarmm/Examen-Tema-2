@@ -26,3 +26,13 @@ struct Estudiante {
     struct Materia materias[MAX_MATERIAS];
     int num_materias;
 };
+
+void agregarMateria(struct Estudiante* estudiante, const struct Materia* nuevaMateria) {
+    if (estudiante->num_materias < MAX_MATERIAS) {
+        estudiante->materias[estudiante->num_materias] = *nuevaMateria;
+        estudiante->num_materias++;
+    } else {
+        printf("No se pueden agregar más materias.\n");
+    }
+}
+
