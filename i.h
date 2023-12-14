@@ -28,3 +28,10 @@ typedef struct {
     char fecha[MAX_FECHA];
     EstadoAsistencia estado;
 } Asistencia;
+
+typedef struct {
+    char nombre[MAX_MATERIA];
+    int codigo;
+    Asistencia asistencias[MAX_ASISTENCIAS];
+    int num_asistencias;
+} Materia;
