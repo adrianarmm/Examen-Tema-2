@@ -40,3 +40,6 @@ int main() {
 
     Materia mat1 = {"Programacion", 101};
     Materia mat2 = {"Informatica", 102};
+
+    agregarMateria(estudiante1, mat1);
+    agregarMateria(estudiante1, mat2);
